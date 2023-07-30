@@ -104,11 +104,28 @@
   // câu 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
  // let a1 = ['10','h','15','16',]
  //  let a2 = ['10','h','15','16',]
- //  if (a1 === a2) {
- //      console.log("2 chuỗi giống nhau")
- //  } else {
- //      console.log("2 chuỗi khác nhau")
+ //  let flag = false;
+ //  for (let i = 0; i < a1.length; i++) {
+ //      if (a1[i] !== a2[i]) {
+ //          alert("2 chuoi khong giong nhau")
+ //          flag = true;
+ //      }
  //  }
+ //  if (flag === false) {
+ //      alert("2 chuoi giong nhau")
+ //  }
+
+
+  // Bài 6: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự
+  // trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+
+  let string = prompt("nhap ki tu :")
+  let stringarr =  string.split("")
+  for (let i = 0; i < stringarr.length; i++) {
+      if (stringarr[i] === "-") {
+          stringarr[i] = "_"
+      }
+  } alert(stringarr.join(""))
 </script>
 </body>
 </html>
